@@ -57,10 +57,10 @@ body {
 
 /* CENTERED TRANSPARENT BOX */
 .about {
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
     max-width: 1000px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -152,3 +152,4 @@ body {
         width: 40px;
     }
 }
+
