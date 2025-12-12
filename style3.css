@@ -46,8 +46,10 @@ body {
 /* ================= ABOUT PAGE ================ */
 .aboutus {
     position: relative;
-    text-align: center;
-    color: white;
+    width: 100%;
+    display: flex;               /* Center children */
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutus img {
@@ -57,11 +59,6 @@ body {
 
 /* CENTERED TRANSPARENT BOX */
 .about {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     max-width: 90%;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -72,6 +69,11 @@ body {
     font-weight: bold;
     line-height: 2;
     color: #333;
+
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ================= SOCIAL ICONS ================ */
@@ -155,5 +157,6 @@ body {
         width: 40px;
     }
 }
+
 
 
