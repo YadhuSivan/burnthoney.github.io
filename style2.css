@@ -1,0 +1,290 @@
+header{
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+     }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            padding: 15px 40px;
+            font-family:'kalam', sans-serif;
+            font-weight: bolder;
+
+        }
+        nav ul {
+            
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 40px;
+            width: 30%;
+            justify-content: space-around;
+            background-color: transparent;
+        }  
+        nav ul li a{
+                text-decoration:none;
+                color: #bb8181;
+                display: block;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+        }
+
+        nav li a:hover{color: #a40000;  }
+
+        div.intro{
+            background-image: url(images/pink.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 300px;
+            padding: 40px;
+        }
+
+        .productintro{
+            font-weight:bolder;
+            font-family:'kalam', sans-serif;
+            color: aliceblue;
+            font-size:xx-large;
+            width: 90%;
+            line-height: 60px;
+            text-align:right
+        
+        }
+        .productsprice img{
+            height: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:auto;
+        }
+
+        .prodhead{
+            font-style:italic;
+            font-weight:bolder;
+            font-family:'kalam', sans-serif;
+            color: aliceblue;
+            
+        }
+
+         body {
+
+        background-image: url(images/tb.png);
+        background-repeat:repeat;      
+        }
+        
+        h3{
+            font-family:'kalam', sans-serif;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        h1{
+            font-weight: bolder;
+            text-align: center;
+            line-height: 60px;
+
+        }
+        .price{
+            text-align: center;
+        }
+
+        .iceproducts{
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+        }
+        .online{
+            font-family:'kalam', sans-serif;
+            font-size: xx-large;
+            text-align: center;
+            font-weight: bolder;
+            
+            
+        }
+
+        .online a{
+            text-decoration: none;
+            color: #ad1212;
+        }
+        
+        .bounce-images {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bounce-images::before,
+.bounce-images::after {
+    content: "";
+    display: inline-block;
+    width: 40px;                 
+    height: 40px;
+    background-image: url("images/ice-cream-cone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 15px;
+    animation: bounce 0.6s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+
+        .row {
+         display: flex;
+
+        }
+
+        .column {
+        /* flex: 33.33%; */
+        padding: 5px;
+        overflow: hidden;
+        }
+
+        .column img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        }
+
+        .social-icons{
+        display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 15px; 
+    width: 100%; 
+    padding: 30px 0; 
+    margin-top: 20px; 
+    border-top: 1px solid #eee;
+    }
+    .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    justify-content: center;
+    }
+    .fa:hover {
+    opacity: 0.7;
+    }
+
+    .fa-facebook {
+    background: #3B5998;
+    color: white;
+    }
+
+    .fa-instagram {
+    background: #125688;
+    color: white;
+    }
+
+    /* ===================== MOBILE RESPONSIVENESS ===================== */
+@media (max-width: 768px) {
+
+    /* ---------- NAVIGATION ---------- */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .img1 img {
+        width: 180px;
+        height: auto;
+    }
+
+    /* ---------- INTRO SECTION (TOP BANNER) ---------- */
+    .intro {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .prodhead {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .productintro {
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center; 
+        width: 100%;
+    }
+
+    /* ---------- PRODUCT IMAGE (CARROT CAKE) ---------- */
+    .productsprice img {
+        width: 100%;
+        height: auto;  /* prevent stretching */
+    }
+
+    /* ---------- GRID OF IMAGES ---------- */
+    .row {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .column img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ---------- TEXT ELEMENTS ---------- */
+    h1 {
+        line-height: 40px;
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    h3 {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .iceproducts {
+        line-height: 32px;
+        padding: 10px;
+    }
+
+    .price {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* ---------- ONLINE ORDER LINK ---------- */
+    .online {
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    .bounce-images {
+        font-size: 28px;
+    }
+
+    .bounce-images::before,
+    .bounce-images::after {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* ---------- SOCIAL ICONS ---------- */
+    .fa {
+        padding: 15px;
+        font-size: 24px;
+        width: 40px;
+    }
+}
