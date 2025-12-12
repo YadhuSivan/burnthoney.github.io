@@ -57,11 +57,12 @@ body {
 
 /* CENTERED TRANSPARENT BOX */
 .about {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    max-width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 90%;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
@@ -71,7 +72,6 @@ body {
     font-weight: bold;
     line-height: 2;
     color: #333;
-    margin: 0 auto;
 }
 
 /* ================= SOCIAL ICONS ================ */
@@ -125,6 +125,9 @@ body {
         justify-content: center;
         gap: 20px;
     }
+    .aboutus {
+        position: relative;
+    }
 
     /* ABOUT BANNER IMAGE */
     .aboutus img {
@@ -134,12 +137,12 @@ body {
 
     /* ABOUT BOX CENTER ON MOBILE */
     .about {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         margin: 20px auto;
-        width: 90%;
+        width: 85%;
         padding: 20px;
         font-size: 18px;
         line-height: 1.7;
@@ -152,4 +155,5 @@ body {
         width: 40px;
     }
 }
+
 
