@@ -53,14 +53,15 @@ body {
 .aboutus img {
     width: 100%;
     display: block;
+    height: auto;
 }
 
 /* ================= PARAGRAPH BOX (TOP-CENTER) ================= */
 .about {
     position: absolute;
-    top: 10%;                  /* Top distance from image */
-    left: 50%;                 /* Center horizontally */
-    transform: translateX(-50%); /* Horizontal centering only */
+    top: 10%;                  /* Distance from top of image */
+    left: 50%;                 /* Horizontal center */
+    transform: translateX(-50%); /* Center horizontally only */
     
     max-width: 90%;
     padding: 30px;
