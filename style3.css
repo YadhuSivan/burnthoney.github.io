@@ -1,3 +1,4 @@
+/* ================= HEADER ================= */
 header {
     background-color: #ffffff;
     position: sticky;
@@ -5,7 +6,7 @@ header {
     z-index: 1000;
 }
 
-/* ================= NAVIGATION ================ */
+/* ================= NAVIGATION ================= */
 nav {
     display: flex;
     justify-content: space-between;
@@ -37,19 +38,16 @@ nav li a:hover {
     color: #a40000;
 }
 
-/* ================= BACKGROUND ================ */
+/* ================= BACKGROUND ================= */
 body {
     background-image: url(images/tb.png);
     background-repeat: repeat;
 }
 
-/* ================= ABOUT PAGE ================ */
+/* ================= ABOUT PAGE ================= */
 .aboutus {
-    position: relative;
+    position: relative;       /* Needed for absolute child positioning */
     width: 100%;
-    display: flex;               /* Center children */
-    justify-content: center;
-    align-items: center;
 }
 
 .aboutus img {
@@ -57,8 +55,13 @@ body {
     display: block;
 }
 
-/* CENTERED TRANSPARENT BOX */
+/* ================= PARAGRAPH BOX (TOP-CENTER) ================= */
 .about {
+    position: absolute;
+    top: 10%;                  /* Top distance from image */
+    left: 50%;                 /* Center horizontally */
+    transform: translateX(-50%); /* Horizontal centering only */
+    
     max-width: 90%;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -69,14 +72,10 @@ body {
     font-weight: bold;
     line-height: 2;
     color: #333;
-
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-/* ================= SOCIAL ICONS ================ */
+/* ================= SOCIAL ICONS ================= */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -127,23 +126,16 @@ body {
         justify-content: center;
         gap: 20px;
     }
-    .aboutus {
-        position: relative;
-    }
 
-    /* ABOUT BANNER IMAGE */
+    /* ABOUT US IMAGE */
     .aboutus img {
         width: 100%;
         height: auto;
     }
 
-    /* ABOUT BOX CENTER ON MOBILE */
+    /* ABOUT BOX TOP-CENTER ON MOBILE */
     .about {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 20px auto;
+        top: 12%;                 /* Slightly lower on small screens */
         width: 85%;
         padding: 20px;
         font-size: 18px;
@@ -157,6 +149,3 @@ body {
         width: 40px;
     }
 }
-
-
-
