@@ -1,102 +1,118 @@
-header{
-        background-color: #ffffff;
-        position: sticky;
-        top: 0;
-     }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            padding: 15px 40px;
-            font-family:'kalam', sans-serif;
-            font-weight: bolder;
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        }
-        nav ul {
-            
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            gap: 40px;
-            width: 30%;
-            justify-content: space-around;
-            background-color: transparent;
-        }  
-        nav ul li a{
-                text-decoration:none;
-                color: #bb8181;
-                display: block;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-        }
+/* ================= NAVIGATION ================ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: 'kalam', sans-serif;
+    font-weight: bolder;
+}
 
-        nav li a:hover{color: #a40000;  }
-        body {
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    width: 30%;
+    justify-content: space-around;
+    background-color: transparent;
+}
 
-            background-image: url(images/tb.png);
-            background-repeat:repeat;
-               
-        }
-      
-        .aboutus {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .about {
-            position: absolute;
-            top: 250px;
-            left: 50%;
-            transform: translate(-50%);
-            max-width: 1000px;
-            background-color: rgba(255, 255, 255, 0.6); 
-            border-radius: 10px; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-            font-family:'kalam', sans-serif;
-            font-size:larger;
-            font-weight: bold; 
-            line-height: 2; 
-            color: #333; 
-            margin: 0 auto;
-        }
-        .social-icons{
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        gap: 15px; 
-        width: 100%; 
-        padding: 30px 0; 
-        margin-top: 20px; 
-        border-top: 1px solid #eee;
-        }
-        .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        justify-content: center;
-        }
-        .fa:hover {
-        opacity: 0.7;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: #bb8181;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-        .fa-facebook {
-        background: #3B5998;
-        color: white;
-        }
+nav li a:hover {
+    color: #a40000;
+}
 
-        .fa-instagram {
-        background: #125688;
-        color: white;
-        }
+/* ================= BACKGROUND ================ */
+body {
+    background-image: url(images/tb.png);
+    background-repeat: repeat;
+}
 
+/* ================= ABOUT PAGE ================ */
+.aboutus {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
-        /* ===================== MOBILE RESPONSIVE ABOUT PAGE ===================== */
-    @media (max-width: 768px) {
+.aboutus img {
+    width: 100%;
+    display: block;
+}
 
-    /* --------- NAVIGATION --------- */
+/* CENTERED TRANSPARENT BOX */
+.about {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1000px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'kalam', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    line-height: 2;
+    color: #333;
+    margin: 0 auto;
+}
+
+/* ================= SOCIAL ICONS ================ */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* ===================== RESPONSIVE DESIGN ===================== */
+@media (max-width: 768px) {
+
+    /* NAVIGATION */
     nav {
         flex-direction: column;
         align-items: center;
@@ -110,24 +126,26 @@ header{
         gap: 20px;
     }
 
-    /* --------- ABOUT US BANNER --------- */
+    /* ABOUT BANNER IMAGE */
     .aboutus img {
         width: 100%;
         height: auto;
     }
 
-    /* --------- ABOUT CONTENT BOX --------- */
+    /* ABOUT BOX CENTER ON MOBILE */
     .about {
-        
+        position: relative;
+        top: 0;
+        left: 0;
         transform: none;
         margin: 20px auto;
         width: 90%;
+        padding: 20px;
         font-size: 18px;
         line-height: 1.7;
-        padding: 20px;
     }
 
-    /* --------- SOCIAL ICONS --------- */
+    /* SOCIAL ICONS */
     .fa {
         padding: 15px;
         font-size: 24px;
