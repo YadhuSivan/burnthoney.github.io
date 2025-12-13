@@ -1,114 +1,122 @@
-header{
-        background-color: #ffffff;
-        position: sticky;
-        top: 0;
-     }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-            padding: 15px 40px;
-            font-family:'kalam', sans-serif;
-            font-weight: bolder;
+/* ================= HEADER ================= */
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        }
-        nav ul {
-            
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            gap: 40px;
-            width: 30%;
-            justify-content: space-around;
-            background-color: transparent;
-        }  
-        nav ul li a{
-                text-decoration:none;
-                color: #bb8181;
-                display: block;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-        }
+/* ================= NAVIGATION ================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 40px;
+    font-family: 'kalam', sans-serif;
+    font-weight: bolder;
+}
 
-        nav li a:hover{color: #a40000;  }
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    width: 30%;
+    justify-content: space-around;
+}
 
-        div.intro{
-            background-image: url(images/pink.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 300px;
-            padding: 40px;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: #bb8181;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-        .productintro{
-            font-weight:bolder;
-            font-family:'kalam', sans-serif;
-            color: aliceblue;
-            font-size:xx-large;
-            width: 90%;
-            line-height: 60px;
-            text-align:right
-        
-        }
-        .productsprice img{
-            height: 500px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width:auto;
-        }
+nav ul li a:hover {
+    color: #a40000;
+}
 
-        .prodhead{
-            font-style:italic;
-            font-weight:bolder;
-            font-family:'kalam', sans-serif;
-            color: aliceblue;
-            
-        }
+/* ================= BODY BACKGROUND ================= */
+body {
+    background-image: url(images/tb.png);
+    background-repeat: repeat;
+}
 
-         body {
+/* ================= INTRO SECTION ================= */
+.intro {
+    background-image: url(images/pink.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
-        background-image: url(images/tb.png);
-        background-repeat:repeat;      
-        }
-        
-        h3{
-            font-family:'kalam', sans-serif;
-            font-weight: bolder;
-            text-align: center;
-        }
+.prodhead {
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'kalam', sans-serif;
+    color: aliceblue;
+}
 
-        h1{
-            font-weight: bolder;
-            text-align: center;
-            line-height: 60px;
+.productintro {
+    font-family: 'kalam', sans-serif;
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: xx-large;
+    line-height: 60px;
+    width: 90%;
+    text-align: right;
+}
 
-        }
-        .price{
-            text-align: center;
-        }
+/* ================= PRODUCT IMAGE ================= */
+.productsprice img {
+    height: 500px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
 
-        .iceproducts{
-            text-align: center;
-            line-height: 40px;
-            font-weight: bold;
-        }
-        .online{
-            font-family:'kalam', sans-serif;
-            font-size: xx-large;
-            text-align: center;
-            font-weight: bolder;
-            
-            
-        }
+/* ================= HEADINGS & TEXT ================= */
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    line-height: 60px;
+}
 
-        .online a{
-            text-decoration: none;
-            color: #ad1212;
-        }
-        
-        .bounce-images {
+h3 {
+    font-family: 'kalam', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+}
+
+.iceproducts {
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+/* ================= ONLINE ORDER ================= */
+.online {
+    font-family: 'kalam', sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.online a {
+    text-decoration: none;
+    color: #ad1212;
+}
+
+/* ================= BOUNCING ICON TEXT ================= */
+.bounce-images {
     font-size: 40px;
     font-weight: bold;
 }
@@ -117,7 +125,7 @@ header{
 .bounce-images::after {
     content: "";
     display: inline-block;
-    width: 40px;                 
+    width: 40px;
     height: 40px;
     background-image: url("images/ice-cream-cone.png");
     background-size: contain;
@@ -127,65 +135,64 @@ header{
 }
 
 @keyframes bounce {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-12px); }
+    from { transform: translateY(0); }
+    to { transform: translateY(-12px); }
 }
 
-        .row {
-         display: flex;
+/* ================= IMAGE GRID ================= */
+.row {
+    display: flex;
+}
 
-        }
+.column {
+    padding: 5px;
+    overflow: hidden;
+}
 
-        .column {
-        /* flex: 33.33%; */
-        padding: 5px;
-        overflow: hidden;
-        }
+.column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        .column img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-        }
-
-        .social-icons{
-        display: flex; 
+/* ================= SOCIAL ICONS ================= */
+.social-icons {
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    gap: 15px; 
-    width: 100%; 
-    padding: 30px 0; 
-    margin-top: 20px; 
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 20px;
     border-top: 1px solid #eee;
-    }
-    .fa {
+}
+
+.fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
-    justify-content: center;
-    }
-    .fa:hover {
-    opacity: 0.7;
-    }
+}
 
-    .fa-facebook {
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
     background: #3B5998;
     color: white;
-    }
+}
 
-    .fa-instagram {
+.fa-instagram {
     background: #125688;
     color: white;
-    }
+}
 
-    /* ===================== MOBILE RESPONSIVENESS ===================== */
+/* ===================== RESPONSIVE DESIGN ===================== */
 @media (max-width: 768px) {
 
-    /* ---------- NAVIGATION ---------- */
+    /* NAVIGATION */
     nav {
         flex-direction: column;
         align-items: center;
@@ -199,36 +206,31 @@ header{
         gap: 20px;
     }
 
-    .img1 img {
-        width: 180px;
-        height: auto;
-    }
-
-    /* ---------- INTRO SECTION (TOP BANNER) ---------- */
+    /* INTRO */
     .intro {
-        padding: 20px;
+        justify-content: center;
         text-align: center;
+        padding: 20px;
     }
 
     .prodhead {
         font-size: 28px;
-        text-align: center;
     }
 
     .productintro {
         font-size: 20px;
         line-height: 32px;
-        text-align: center; 
         width: 100%;
+        text-align: center;
     }
 
-    /* ---------- PRODUCT IMAGE (CARROT CAKE) ---------- */
+    /* PRODUCT IMAGE */
     .productsprice img {
         width: 100%;
-        height: auto;  /* prevent stretching */
+        height: auto;
     }
 
-    /* ---------- GRID OF IMAGES ---------- */
+    /* IMAGE GRID */
     .row {
         flex-direction: column;
     }
@@ -238,37 +240,27 @@ header{
         padding: 10px 0;
     }
 
-    .column img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* ---------- TEXT ELEMENTS ---------- */
+    /* TEXT */
     h1 {
-        line-height: 40px;
         font-size: 28px;
-        padding: 10px;
+        line-height: 40px;
     }
 
     h3 {
-        padding: 10px;
         font-size: 18px;
     }
 
     .iceproducts {
         line-height: 32px;
-        padding: 10px;
     }
 
     .price {
         font-size: 18px;
-        padding: 10px;
     }
 
-    /* ---------- ONLINE ORDER LINK ---------- */
+    /* ONLINE ORDER */
     .online {
         font-size: 26px;
-        padding: 10px;
     }
 
     .bounce-images {
@@ -281,7 +273,7 @@ header{
         height: 25px;
     }
 
-    /* ---------- SOCIAL ICONS ---------- */
+    /* SOCIAL ICONS */
     .fa {
         padding: 15px;
         font-size: 24px;
